@@ -48,7 +48,7 @@ async def main_adarsh():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 List is Updated every 15 Mins - Powered by @AGProjects \n Have a **Suggestion**  or want to report a **Bug**  \n  Contact at @AGProjectschat \n Some Bots Will Go Down💤 in the last week of every month because they  are hosted on Heroku  \n  **Heroku Limitations** \n  Consider **Donating** </i>"
+                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 List is Updated every 15 Mins - Powered by _____ \n Have a **Suggestion**  or want to report a **Bug**  \n  Contact at ______ \n Some Bots Will Go Down💤 in the last week of every month because they  are hosted on Heroku  \n  **Heroku Limitations** \n  Consider **Donating** </i>"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xyz_adarsh)
                 print(f"Last checked on: {last_update}🇮🇳")                
                 await asyncio.sleep(900)
