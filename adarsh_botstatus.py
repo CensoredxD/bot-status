@@ -3,6 +3,8 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 import asyncio
 import datetime
+import time
+import psutil
 import pytz
 import os
 
@@ -21,6 +23,15 @@ async def main_adarsh():
     async with app:
             while True:
                 print("Checking...")
+                bot_uptime = int(time.time() - _boot_)
+                cpu = psutil.cpu_percent(interval=0.5)
+                mem = psutil.virtual_memory().percent
+                disk = psutil.disk_usage("/").percent
+                UP = f"{get_readable_time((bot_uptime))}"
+                CPU = f"{cpu}%"
+                RAM = f"{mem}%"
+                DISK = f"{disk}%"
+  return UP, CPU, RAM, DISK
                 GET_CHANNEL_OR_GROUP = await app.get_chat(int(CHANNEL_OR_GROUP_ID))
                 CHANNEL_OR_GROUP_NAME = GET_CHANNEL_OR_GROUP.title
                 CHANNEL_OR_GROUP_TYPE = GET_CHANNEL_OR_GROUP.type
