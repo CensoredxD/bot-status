@@ -23,7 +23,6 @@ async def main_adarsh():
     async with app:
             while True:
                 print("Checking...")
-                bot_uptime = int(time.time() - _boot_)
                 cpu = psutil.cpu_percent(interval=0.5)
                 mem = psutil.virtual_memory().percent
                 disk = psutil.disk_usage("/").percent
