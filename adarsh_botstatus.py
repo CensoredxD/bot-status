@@ -31,7 +31,7 @@ async def main_adarsh():
                 CPU = f"{cpu}%"
                 RAM = f"{mem}%"
                 DISK = f"{disk}%"
-  return UP, CPU, RAM, DISK
+ return UP, CPU, RAM, DISK
                 GET_CHANNEL_OR_GROUP = await app.get_chat(int(CHANNEL_OR_GROUP_ID))
                 CHANNEL_OR_GROUP_NAME = GET_CHANNEL_OR_GROUP.title
                 CHANNEL_OR_GROUP_TYPE = GET_CHANNEL_OR_GROUP.type
