@@ -24,7 +24,7 @@ async def main_adarsh():
                 GET_CHANNEL_OR_GROUP = await app.get_chat(int(CHANNEL_OR_GROUP_ID))
                 CHANNEL_OR_GROUP_NAME = GET_CHANNEL_OR_GROUP.title
                 CHANNEL_OR_GROUP_TYPE = GET_CHANNEL_OR_GROUP.type
-                xyz_adarsh = f"📊 **<u>𝙇𝙞𝙫𝙚 𝙅𝙚𝙧𝙧𝙮𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩 𝙎𝙩𝙖𝙩𝙪𝙨</u>**\n\n**💬 {CHANNEL_OR_GROUP_TYPE}**: {CHANNEL_OR_GROUP_NAME}🚥"
+                xyz_adarsh = f"📊 **<u>𝙇𝙞𝙫𝙚 𝙅𝙚𝙧𝙧𝙮𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩 𝙎𝙩𝙖𝙩𝙪𝙨</u>**\n\n**📡 {CHANNEL_OR_GROUP_TYPE}**: {CHANNEL_OR_GROUP_NAME}🚥"
                 for bot in BOT_LIST:
                     try:
                         yyy_adarsh = await app.send_message(bot, "/start")
@@ -48,7 +48,7 @@ async def main_adarsh():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 𝙎𝙩𝙖𝙩𝙪𝙨 𝙐𝙥𝙙𝙖𝙩𝙚 𝙖𝙪𝙩𝙤 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 1 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 - 🅾🆆🅽🅴🆁 @Aditya_xDz \n Have a **Suggestion**  or want to report a **Bug**  \n  Contact at @Aditya_xDz \n <i>"
+                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 𝙎𝙩𝙖𝙩𝙪𝙨 𝙐𝙥𝙙𝙖𝙩𝙚 𝙖𝙪𝙩𝙤 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 1 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 - 🅾🆆🅽🅴🆁 @Aditya_xDz \n <i>"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xyz_adarsh)
                 print(f"Last checked on: {last_update}🇮🇳")                
                 await asyncio.sleep(60)
