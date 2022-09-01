@@ -48,10 +48,10 @@ async def main_adarsh():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 𝙎𝙩𝙖𝙩𝙪𝙨 𝙐𝙥𝙙𝙖𝙩𝙚 𝙖𝙪𝙩𝙤 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 3 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 - 🅾🆆🅽🅴🆁 @Aditya_xDz \n <i>"
+                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 𝙎𝙩𝙖𝙩𝙪𝙨 𝙐𝙥𝙙𝙖𝙩𝙚 𝙖𝙪𝙩𝙤 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 5 𝙈𝙞𝙣𝙪𝙩𝙚𝙨 - 🅾🆆🅽🅴🆁 @Aditya_xDz \n <i>"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xyz_adarsh)
                 print(f"Last checked on: {last_update}🇮🇳")                
-                await asyncio.sleep(180)
+                await asyncio.sleep(300)
                         
 app.run(main_adarsh())
 
